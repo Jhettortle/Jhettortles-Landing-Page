@@ -1,126 +1,242 @@
-/* Universal Selector */
-* {
-  margin:0;
-  padding:0;  
+/* General Style*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Element Selectors */
-body {
-  position: relative;
-  font-family: "Goudy Bookletter 1911", sans-serif;
-  font-size: 20px;
-  background-color: #ffd78f;
-  color: #010101;
+.flex-row {
+  display: flex;
+}
+
+:root {
   
 }
 
-h1,
-h2 {
-  margin: 20px;
+body{
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
-  padding: 60px 0;
-}
-
-li {
-  display: inline;
-  padding: 0px 20px;
-  text-decoration: none;
-}
-
-a {
-  text-decoration: none;
-  color: #FDF8F5;
-}
-
-header,
-footer {
-  height: 60px;
-  width: 100%;
-  line-height: 60px;
-  background-color: #2b3af3;
-}
+/* HEADER/NAV STYLE */
 
 header {
-  position: fixed;
-  border-bottom: 10px solid #ff0000;
+  padding: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-image: url(../images/maina.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 9999;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  
 }
 
-footer {
-  position: absolute;
-  margin-top: 0;
-  bottom: 0;
-  border-bottom: 20px solid #2b3af3;
-  color: #FDF8F5;    
-}
-
-figure {
-  margin-bottom: 40px;
-}
-
-img {
+header .header-brand {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  text-transform: uppercase;
   display: block;
-  margin: 20px auto;
+  margin: 0;
+  text-align: center;
+  padding: 7px 0;
 }
 
-
-section {
-  margin-bottom: 0;
-  padding: 20px 10px 40px 10px;
-  border-top: 3px solid #ff0000;
-  background-color:  #ffd78f;
+header nav {
+  margin: 7px 0;
 }
 
-form {
-  /* Center the form on the page */
-  margin: 0 auto;
-  width: 500px;
-  padding: 10px;
-  border: 5px solid #ff0000;
-  border-radius: 10px;
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
-label {
+header nav ul li {
   display: inline-block;
-  width: 100px;
-}
-  
-input, 
-textarea {
-  box-sizing: border-box;
-  width: 300px;
-  border: 1px solid color #010101;
+  float: center;
+  list-style: none;
+  padding: 0 16px;
 }
 
-textarea {
-  vertical-align: top;
-  height: 60px;
+header nav ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 10px;
 }
-  
-button {
-  height: 40px;
-  width: 120px;
-  background-color: #4F4846;
-  color: #f5fdf6;
+
+.header-brand{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 600;
+
+}
+
+h1{
+  font-weight: bold;
+  font-size: 36px;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+ li a::after{
+  content: '';
+  width:0;
+  height: 3px;
+  background-color: #3061e3;
+  margin: auto;
+  display: block;
+}
+
+ li a:hover::after{
+  width: 100%;
+  transition: width 0.3s linear
 }
  
-/* Class Selectors */
-.text-center {
-  text-align: center;
+li a:hover {
+  color: #3061e3;
 }
 
-.text-right {
+/* BODY STYLE */
+
+.sonic {
+  background-image: url(../images/maina.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
+}
+
+.sonic-cta {
+  width: 35%;
   text-align: right;
+  margin: 3.5%;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #ffffff;
 }
 
-@media (390px <= width <= 844) {
-  body{
+.sonic-cta h2 {
+  font-style: italic;
+  font-size: 55px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sonic-cta p {
+  color: #ffd78f;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../images/bluebg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+}
+
+section{
+padding: 60px;
+}
+
+.section-title {
+  font-size: 48px;
+  border-bottom: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+  color:#da2528
+  }
+
+p {
+  text-align: center;
+  font-size: larger;
+  text-transform: uppercase;
+}
+
+/* FOOTER STYLE */
+
+footer {
+  width: 100%;
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #da2528;
+}
+
+/* MEDIA SCREENS FOR PHONES */
+
+@media screen and ( max-width: 400px) {
+  header{
+    padding-bottom: 0;
+    justify-content: center;
     position: relative;
-  font-family: "Goudy Bookletter 1911", sans-serif;
-  font-size: 20px;
-  background-color: #ffd78f;
-  color: #010101;
   }
   
 }
+header h1 {
+  width: 100%;
+  text-align: center;
+}
+
+header nav ul{
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+header nav ul li a {
+  font-size: 20px;
+}
+
+.section-title {
+  width: 80%;
+  padding: 30px 15px;
+}
+
+.sonic{
+  width: 100%;
+}
+
+.sonic-cta {
+  width: 100%;
+  text-align: center;
+}
+
+footer h2 {
+  text-align: center;
+  width: 100%;
+}
+

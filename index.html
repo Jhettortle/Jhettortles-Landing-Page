@@ -1,54 +1,52 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
+  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="./assest/css/style.css">
   <title>Jhettortle's Landing Page</title>
-</head>
-
+  </head>
+ 
 <body>
-  <header>
-    <nav class="text-right" class="wrapper">
-      <ul>
-        <li> <a href="https://github.com/Jhettortle/" target="_blank">Github</a> </li>
-        <li> <a href="#">Portfolio</a></li>
-        <li> <a href="#contact">Contact</a></li>
-      </ul>
-    </nav> 
-  </header>
-  <main>
-    <h1 class="text-center">My New Website</h1>
-    <figure>
-      <img src="assest/images/image-1.png" alt="sonic the hedgehog thumbs up">
-      <figcaption class="text-center">Hello! My name is Joshua Garcia. I'm a Certified Pharmacy Technician who likes video games, anime, music, poetry books and hiking. I have been a pharm tech for about 7 years and I wanna try something esle now.
-        I am currently taking a bootcamp in coding. I have linked my Github, so you're more than welcome to check that out! You're more than welcome to reach me at any of the listed ways below. Thank your for checking out my webpage and enjoy the rest of your day!!</figcaption>
-        <img src="assest/images/cont.gif" alt="sonic and tails continue their journey">
-    </figure>
-    <section id="contact">
-      <h2 class="text-center">Contact Me</h2>
-      <p class="text-center"> Email: Joshg1668@gmail.com Phone: 352-346-8565</p>
-      <form> 
+    <header> <!--Nav Bar -->
+      <a href="index.html" class="header-brand">Jhettortle</a>
+      <nav>
         <ul>
-          <li>
-            <label class="text-right" for="name">Name:</label>
-            <input type="text" id="name" name="user-name">
-          </li>
-          <li>
-            <label class="text-right" for="email">Email:</label>
-            <input type="text" id="email" name="user-email">
-          </li>
+          <li> <a href="#about-me">AboutMe</a> </li>
+          <li> <a href="https://github.com/Jhettortle/" target="_blank">Github</a></li>
+          <li> <a href="#Contact-Me">Contact</a> </li>
         </ul>
-        <div class="text-center"> 
-          <button type="submit">SEND</button>
-        </div>
-      </form>
-    </section>
-  </main>
+      </nav>
+    </header> <!-- End of Nav Bar-->
 
-  <footer class="text-center">
-    © 2023 Jhettortle Productions | Designed by Joshua Garcia
-  </footer>
-    
-</body>
-</html>
+    <!-- HERO SECTION -->
+    <section class="sonic">
+      <div class="sonic-cta">
+        <h2>GOTTA GO FAST!</h2>
+        <p>If you got time to think about it,THEN RUN!!</p>
+      </div>
+    </section>
+
+  <!-- ABOUT ME SECTION-->
+    <section id="about-me" class="about-me">
+        <div class="flex-row">
+          <h2 class="section-title primary border"> About Me</h2>
+        </div>
+            <p>Hello my Name is Joshua Garcia. I am currently a Pharmacy Technician that is taking a coding bootcamp at UFC! <img src="assest/images/image-1.png" alt="sonic the hedgehog thumbing up"</p>
+            </div>
+      </section>
+
+      <!--CONTACT ME SECTION-->
+      <section id="Contact-Me" class="contact">
+        <div class="flex-row">
+          <h2 class="section-title primary border"> CONTACT ME</h2>
+        </div>
+            <p>P: 352.346.8565 E: <a href="mailto:joshg1668@gmail.com">joshg1668@gmail.com </a></p>
+      </section>
+      
+      <footer>
+     </h2>© 2023 Jhettortle Productions | Designed by Joshua Garcia</h2>
+      
+    </footer>
+  </body>
+ </html>
